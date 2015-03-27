@@ -6,6 +6,39 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 .masthead {
-  background-image: url("../images/logo.svg");
+  padding-top: 6em;
+  background-image: url("../images/logo.svg"), url("../images/texture.png");
+  background-size: 75px auto, 200px auto;
+  /*background-repeat: repeat-x;*/
+  /*background-repeat: repeat-y;*/
+  background-repeat: no-repeat, repeat;
+  /*background-position: center center;*/
+  background-position: center 10px, left top;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.box {
+  background-color: #3b3a33;
+  padding: 1em;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #A8AE98;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #A8AE98, #5B5E52);
 }
